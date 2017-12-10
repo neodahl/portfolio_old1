@@ -42,3 +42,10 @@ section, nav, article, aside, header, footer, main {display:block;}
 	width: 1px;
 	height: 1px;
 }
+
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
