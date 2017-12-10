@@ -7,7 +7,10 @@
 
 
 /*
-@media all and (min-width: 1005px) and (max-width: 1200px) {}
+@media all and (max-width: 1024px) { tablet start }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { tablet }
+@media all and (max-width: 767px) { phone }
 */
 
 
@@ -17,17 +20,24 @@ header {
 	position: fixed;
 	z-index: 10;
 	width: 100%;
-	height: 10rem;
+	height: 7rem;
 	text-align: center;
 	/*box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);*/
 	background-color: rgba(255, 255, 255, 0.6);
 }
+
+header.logo {
+	font-size: 2rem;
+}
+
+
+
 /*lnb menu button*/
 .btn_lnb_menu {
 	display: none;
 	position: absolute;
-	left: 2rem;
-	top: 2rem;
+	left: 1rem;
+	top: 1rem;
 	width: 4rem;
 	height: 4rem;
 	/*z-index: 2;*/
@@ -83,19 +93,30 @@ header {
 
 header .pc_right_menu {
 	float: right;
-	margin-top: 3rem;
+	margin-top: 2rem;
 }
+@media all and (max-width: 1024px) {
+	header {
+		background-color: transparent;
+	}
+	header .pc_right_menu {
+		display: none;
+	}
+}
+
+
+
 header .pc_right_menu li {
 	display: inline-block;
 	margin: 0 2rem;
 }
 header .pc_right_menu li a {
 	font-family: "Roboto-Regular";
-	font-size: 2rem;
+	font-size: 1.6rem;
 	font-weight: bold;
-	color: #555;
 	/*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
 	transition: all 0.25s;
+	color: #555;
 }
 header .pc_right_menu li.active a,
 header .pc_right_menu li a:hover {
