@@ -3,23 +3,17 @@
 /*Styles*/
 .page_wrapper {
 	position: relative;
-	/*background-color: #ececec;*/
-	min-height: 100vh;
 }
 
 /*Header*/
 header {
-	position: relative;
-	text-align: center;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
 	height: 10rem;
+	text-align: center;
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-}
-header h1 {
-	line-height: 10rem;
-	font-family: "Roboto-Regular";
-	color: #fff;
-	text-shadow: 0.2rem 0.2rem 0.4rem #777;
-	font-size: 3.4rem;
+	/*background-color: rgba(0, 0, 0, 0.2);*/
 }
 /*lnb menu button*/
 .btn_lnb_menu {
@@ -36,9 +30,10 @@ header h1 {
 	display: block;
 	width: 4rem;
 	height: 0.4rem;
-	background-color: powderblue;
+	background-color: #fff;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 	border-radius: 2px;
-	transition: all 0.2s;
+	transition: all 0.25s ease-in-out;
 }
 .btn_lnb_menu span:empty:nth-child(1) {
 	top: 0;
@@ -46,6 +41,7 @@ header h1 {
 .btn_lnb_menu span:empty:nth-child(2) {
 	top: 50%;
 	margin-top: -0.2rem;
+	transition: all 0.2s ease;
 }
 .btn_lnb_menu span:empty:nth-child(3) {
 	bottom: 0;
@@ -54,6 +50,7 @@ header h1 {
 	top: 50%;
 	margin-top: -0.2rem;
 	transform: rotate(45deg);
+	box-shadow: none;
 }
 .btn_lnb_menu.on span:empty:nth-child(2) {
 	opacity: 0;
@@ -63,6 +60,7 @@ header h1 {
 	top: 50%;
 	margin-top: -0.2rem;
 	transform: rotate(-45deg);
+	box-shadow: none;
 }
 
 
@@ -74,17 +72,18 @@ header h1 {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: -1;
 	padding-top: 10rem;
 	box-sizing: border-box;
 	background-color: rgba(0, 0, 0, 0.7);
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	opacity: 0;
 	width: 20rem;
 	height: 40%;
 }
 .lnb.on {
 	opacity: 1;
+	z-index: 1;
 	width: 25rem;
 	height: 100%;
 }
@@ -106,12 +105,58 @@ header h1 {
 
 
 /*Main Area*/
+main > section {
+	width: 100%;
+	min-height: 120vh;
+}
+main > section.bg_section {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+main > section.bg_section h1,
+main > section.bg_section h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "Roboto-Regular";
+	font-size: 7rem;
+	white-space: nowrap;
+	color: #fff;
+	text-shadow: 0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
+}
+.bg_section.bg01 {
+	background-image: url("../images/bg_beach.jpg");
+}
+.bg01 {
+	background-color: floralwhite;
+}
+.bg_section.bg02 {
+	background-image: url("../images/bg_desk.jpg");
+}
+.bg02 {
+	background-color: azure;
+}
+.bg_section.bg03 {
+	background-image: url("../images/bg_leaves.jpg");
+}
+.bg03 {
+	background-color: antiquewhite;
+}
 
 
 
 
 
 
+main > section .content {
+	margin: 0 auto;
+	padding: 10vh 0;
+	width: 80rem;
+}
 
 
 
