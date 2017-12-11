@@ -242,10 +242,25 @@ main > section .content {
 	margin-left: 26px;
 }
 .profile_area p {
+	margin-bottom: 4rem;
 	font-size: 2rem;
 	color: #777;
 }
-
+.profile_area p i {
+	font-size: 2.5rem;
+	color: #555;
+}
+.profile_area ul li {
+	font-size: 2rem;
+	color: #777;
+}
+.introduce li span {
+	margin-right: 1rem;
+	color: #333;
+}
+.introduce li small {
+	text-decoration: line-through;
+}
 
 
 
@@ -253,7 +268,7 @@ main > section .content {
 /*Footer*/
 footer {
 	min-height: 30rem;
-	background-color: #333;
+	background-color: #222;
 	color: #fff;
 }
 
