@@ -237,9 +237,9 @@ main > section .content {
 }
 .profile_area .profile_img img {
 	width: 100%;
-	transform: scale(1.1);
-	margin-top: -144px;
-	margin-left: -10px;
+	transform: scale(1.2);
+	margin-top: -55px;
+	margin-left: 26px;
 }
 .profile_area p {
 	font-size: 2rem;
