@@ -178,6 +178,7 @@ main > section {
 	/*width: 100%;*/
 	min-height: 120vh;
 }
+/*Background Section*/
 main > section:first-child {
 	min-height: 100vh;
 }
@@ -201,42 +202,41 @@ main > section.bg_section h2 {
 	text-shadow: 0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 .bg_section.bg_img01 {
-	background-image: url("../images/bg_beach.jpg");
+	background-image: url("../images/bg_main.jpg");
 	/*background-image: url("../images/bg_beach2.jpg");*/
 }
 .bg_color01 {
-	/*background-color: floralwhite;*/
+	min-height: 100vh;
 	background-color: #f1efe7;
 }
 .bg_section.bg_img02 {
 	background-image: url("../images/bg_desk.jpg");
 }
+.bg_section.bg_img02 h2 {
+	letter-spacing: 30px;
+}
 .bg_color02 {
-	/*background-color: azure;*/
-	background-color: #192939;
+	background-color: #283B4A;
 }
 .bg_section.bg_img03 {
 	background-image: url("../images/bg_leaves.jpg");
 }
 .bg_color03 {
-	/*background-color: antiquewhite;*/
 	background-color: #C9BBAA;
 }
 
-
+/*Contents Section*/
 main > section .content {
 	margin: 0 auto;
 	padding: 10vh 0;
-	/*width: 60vw;*/
 	width: 950px;
-
-	/*box-shadow: 5px 5px 20px #000;*/
 }
 
 
 /*Profile Area*/
 .profile_area .profile_img {
 	float: left;
+	display: inline-block;
 	width: 30rem;
 	height: 30rem;
 	border-radius: 50%;
@@ -249,25 +249,34 @@ main > section .content {
 	margin-top: -55px;
 	margin-left: 26px;
 }
-.profile_area p {
-	margin-bottom: 4rem;
-	font-size: 2rem;
+
+.introduction {
+	float: left;
+	display: inline-block;
+	width: calc(100% - 34rem);
+}
+.introduction > p {
+	margin-bottom: 2rem;
 	color: #777;
 }
-.profile_area p i {
+.introduction > p i {
 	font-size: 2.5rem;
 	color: #000;
 }
-.profile_area ul li {
-	font-size: 2rem;
+.introduction > ul > li {
+	position: relative;
+	margin-bottom: 1rem;
+	padding-left: 6rem;
 	color: #555;
 }
-.introduction li span {
-	margin-right: 1rem;
+.introduction > ul > li span {
+	float: left;
+	margin-left: -6rem;
 	font-weight: bold;
 	color: #333;
 }
-.introduction li small {
+.introduction > ul > li small {
+	font-size: 1.2rem;
 	text-decoration: line-through;
 }
 
