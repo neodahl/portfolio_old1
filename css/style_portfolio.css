@@ -3,14 +3,17 @@
 /********************************************************
 	Styles
 ********************************************************/
+body {
+	font-size: 2rem;
+}
 .page_wrapper {
 	position: relative;
 }
 
 
 /*
+desktop first
 @media all and (max-width: 1024px) { tablet start }
-
 @media all and (min-width: 768px) and (max-width: 1024px) { tablet }
 @media all and (max-width: 767px) { phone }
 */
@@ -203,7 +206,7 @@ main > section.bg_section h2 {
 }
 .bg_color01 {
 	/*background-color: floralwhite;*/
-	background-color: #D8DDD6;
+	background-color: #f1efe7;
 }
 .bg_section.bg_img02 {
 	background-image: url("../images/bg_desk.jpg");
@@ -253,14 +256,15 @@ main > section .content {
 }
 .profile_area p i {
 	font-size: 2.5rem;
-	color: #555;
+	color: #000;
 }
 .profile_area ul li {
 	font-size: 2rem;
-	color: #777;
+	color: #555;
 }
 .introduction li span {
 	margin-right: 1rem;
+	font-weight: bold;
 	color: #333;
 }
 .introduction li small {
@@ -291,6 +295,7 @@ main > section .content {
 .project_list li .project_thumb:hover {
 	box-shadow: 5px 5px 10px #000;
 }
+
 .project_list li:nth-child(odd) .project_thumb {
 	margin-right: 4rem;
 	float: left;
@@ -301,34 +306,45 @@ main > section .content {
 }
 .project_list li .project_thumb img {/*썸네일 이미지는 정사각형을 권장한다*/
 	width: 100%;
+	transition: all 0.4s;
+}
+.project_list li .project_thumb:hover img {
+	transform: scale(1.2);
 }
 .project_list li .project_title {
 	display: inline-block;
 	margin-top: 2rem;
 	margin-bottom: 1.5rem;
 	font-size: 3rem;
-	color: #fff;
+	color: rgba(255, 255, 255, 1);
 }
 .project_list li .project_title:after {
 	content: '';
 	display: block;
 	height: 1px;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 1);
 	transition: width 0.1s;
 	width: 0;
 }
 .project_list li .project_title:hover:after {
 	width: 100%;
 }
+.project_list li .project_title:active {
+	color: rgba(255, 255, 255, 0.7);
+}
+.project_list li .project_title:active:after {
+	background-color: rgba(255, 255, 255, 0.7);
+}
 .project_list li p {
-	color: #999;
+	color: #ccc;
 	font-size: 1.8rem;
+	word-spacing: 2px;
 }
 .project_list li p span {
 	display: inline-block;
 	width: 12rem;
 	margin-right: 1rem;
-	color: #666;
+	color: #999;
 }
 .project_list li p span + a:hover {
 	color: powderblue;
@@ -344,12 +360,20 @@ main > section .content {
 	Footer
 ********************************************************/
 footer {
-	min-height: 30rem;
-	background-color: #222;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	min-height: 5rem;
+	line-height: 5rem;
+	padding: 0 2rem;
+	background-color: rgba(0, 0, 0, 0.3);
 	color: #fff;
+	box-sizing: border-box;
 }
-
-
+footer address {
+	float: right;
+	font-style: normal;
+}
 
 
 
