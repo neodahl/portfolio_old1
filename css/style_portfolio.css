@@ -175,7 +175,7 @@ header .pc_right_menu li a:hover {
 	Main Area
 ********************************************************/
 main > section {
-	width: 100%;
+	/*width: 100%;*/
 	min-height: 120vh;
 }
 main > section:first-child {
@@ -360,13 +360,14 @@ main > section .content {
 	Footer
 ********************************************************/
 footer {
-	position: fixed;
+	/*position: fixed;
 	bottom: 0;
-	width: 100vw;
+	width: 100%;*/
 	min-height: 5rem;
 	line-height: 5rem;
 	padding: 0 2rem;
-	background-color: rgba(0, 0, 0, 0.3);
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	background-color: #333;
 	color: #fff;
 	box-sizing: border-box;
 }
