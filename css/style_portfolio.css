@@ -123,7 +123,7 @@ header .pc_right_menu li {
 	margin: 0 2rem;
 }
 header .pc_right_menu li a {
-	font-family: "Roboto-Regular";
+	/*font-family: "Roboto-Regular";*/
 	font-size: 1.6rem;
 	font-weight: bold;
 	/*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
@@ -195,7 +195,8 @@ main > section.bg_section h2 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-family: "Roboto-Regular";
+	/*font-family: "Roboto-Regular";*/
+	font-family: "Helvetica";
 	font-size: 7rem;
 	white-space: nowrap;
 	color: #fff;
