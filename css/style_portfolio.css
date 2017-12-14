@@ -132,7 +132,7 @@ header .pc_right_menu li a {
 }
 header .pc_right_menu li.active a,
 header .pc_right_menu li a:hover {
-	color: darkcyan;
+	color: #6782ad;
 	/*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);*/
 }
 
@@ -201,11 +201,20 @@ main > section.bg_section h2 {
 	color: #fff;
 	text-shadow: 0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
 }
+main > section.bg_section h1 {
+    color: #f5f4d3;
+    letter-spacing: 12px;
+    word-spacing: 16px;
+}
+
+
+
+
 .bg_section.bg_img01 {
 	background-image: url("../images/bg_main.jpg");
 	/*background-image: url("../images/bg_beach2.jpg");*/
 }
-.bg_color01 {
+.bg_img01 + section {
 	min-height: 100vh;
 	background-color: #f1efe7;
 }
@@ -259,34 +268,20 @@ main > section .content {
 	margin-bottom: 2rem;
 	color: #777;
 }
-.introduction > p i {
+.introduction > p big {
 	font-size: 2.5rem;
-	color: #000;
+	color: #248fa8;
 }
-.introduction > ul > li {
-	position: relative;
-	margin-bottom: 1rem;
-	padding-left: 6rem;
-	color: #555;
-}
-.introduction > ul > li span {
-	float: left;
-	margin-left: -6rem;
-	font-weight: bold;
-	color: #333;
-}
-.introduction > ul > li small {
-	font-size: 1.2rem;
+.introduction > p small {
 	text-decoration: line-through;
 }
-
 
 
 
 /*Project List*/
 .project_list li {
 	padding: 4rem 2rem;
-	border-top: 1px solid #444;
+	border-top: 1px solid #7a8998;
 	border-bottom: 1px solid #111;
 }
 .project_list li:after {
@@ -299,7 +294,7 @@ main > section .content {
 	width: 25rem;
 	height: 20rem;
 	overflow: hidden;
-	transition: all 0.3s;
+	transition: all 0.3s ease;
 }
 .project_list li .project_thumb:hover {
 	box-shadow: 5px 5px 10px #000;
@@ -315,7 +310,7 @@ main > section .content {
 }
 .project_list li .project_thumb img {/*썸네일 이미지는 정사각형을 권장한다*/
 	width: 100%;
-	transition: all 0.4s;
+	transition: all 0.4s ease;
 }
 .project_list li .project_thumb:hover img {
 	transform: scale(1.2);
@@ -330,10 +325,14 @@ main > section .content {
 .project_list li .project_title:after {
 	content: '';
 	display: block;
-	height: 1px;
-	background-color: rgba(255, 255, 255, 1);
-	transition: width 0.1s;
+	height: 2px;
+	background-color: #d2e0ed;
+	transition: width 0.18s ease;
 	width: 0;
+}
+.project_list li .project_title:hover {
+	color: aliceblue;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .project_list li .project_title:hover:after {
 	width: 100%;
