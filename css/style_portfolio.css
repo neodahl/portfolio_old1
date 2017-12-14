@@ -202,11 +202,12 @@ main > section.bg_section h2 {
 	text-shadow: 0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 main > section.bg_section h1 {
-    color: #f5f4d3;
-    letter-spacing: 12px;
-    word-spacing: 16px;
+	letter-spacing: 12px;
+	word-spacing: 16px;
 }
-
+main > section.bg_section h2 {
+	letter-spacing: 30px;
+}
 
 
 
@@ -220,9 +221,6 @@ main > section.bg_section h1 {
 }
 .bg_section.bg_img02 {
 	background-image: url("../images/bg_desk.jpg");
-}
-.bg_section.bg_img02 h2 {
-	letter-spacing: 30px;
 }
 .bg_color02 {
 	background-color: #283B4A;
