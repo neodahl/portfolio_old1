@@ -233,12 +233,8 @@ main > section.bg_section.bg_img02 h2 {
 
 /*Contents Section*/
 main > section .content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	width: 950px;
-	/*margin: 0 auto;*/
+	margin: 0 auto;
 }
 
 
@@ -286,6 +282,9 @@ main > section .content {
 
 
 /*Project List*/
+.project_list {
+	padding: 10vh 0;
+}
 .project_list li {
 	padding: 4rem 2rem;
 	border-top: 1px solid #7a8998;
