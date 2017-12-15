@@ -123,7 +123,6 @@ header .pc_right_menu li {
 	margin: 0 2rem;
 }
 header .pc_right_menu li a {
-	/*font-family: "Roboto-Regular";*/
 	font-size: 1.6rem;
 	font-weight: bold;
 	/*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
@@ -174,16 +173,19 @@ header .pc_right_menu li a:hover {
 /********************************************************
 	Main Area
 ********************************************************/
-main > section {
-	/*width: 100%;*/
-	min-height: 120vh;
+
+main > section:not(.bg_section) {
+	min-height: 110vh;
+	position: relative;
+	padding: 10vh 0;
 }
 /*Background Section*/
 main > section:first-child {
-	min-height: 100vh;
+	min-height: 100vh !important;
 }
 main > section.bg_section {
 	position: relative;
+	min-height: 120vh;
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -195,9 +197,7 @@ main > section.bg_section h2 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/*font-family: "Roboto-Regular";*/
-	font-family: "Helvetica";
-	font-size: 7rem;
+	font-size: 8vh;
 	white-space: nowrap;
 	color: #fff;
 	text-shadow: 0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
@@ -209,15 +209,13 @@ main > section.bg_section h1 {
 main > section.bg_section h2 {
 	letter-spacing: 30px;
 }
-
-
-
+main > section.bg_section.bg_img02 h2 {
+	font-size: 9vh;
+}
 .bg_section.bg_img01 {
 	background-image: url("../images/bg_main.jpg");
-	/*background-image: url("../images/bg_beach2.jpg");*/
 }
-.bg_img01 + section {
-	min-height: 100vh;
+.bg_color01 {
 	background-color: #f1efe7;
 }
 .bg_section.bg_img02 {
@@ -235,9 +233,12 @@ main > section.bg_section h2 {
 
 /*Contents Section*/
 main > section .content {
-	margin: 0 auto;
-	padding: 10vh 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 950px;
+	/*margin: 0 auto;*/
 }
 
 
@@ -250,6 +251,10 @@ main > section .content {
 	border-radius: 50%;
 	overflow: hidden;
 	margin-right: 4rem;
+
+	/**/
+	border: 1px solid;
+	box-sizing: border-box;
 }
 .profile_area .profile_img img {
 	width: 100%;
@@ -268,13 +273,16 @@ main > section .content {
 	color: #777;
 }
 .introduction > p big {
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	color: #248fa8;
 }
 .introduction > p small {
 	text-decoration: line-through;
 }
-
+.introduction > p em {
+    font-size: 2.4rem;
+	color: #10a1e2;
+}
 
 
 /*Project List*/
@@ -282,6 +290,12 @@ main > section .content {
 	padding: 4rem 2rem;
 	border-top: 1px solid #7a8998;
 	border-bottom: 1px solid #111;
+}
+.project_list li:first-child {
+	border-top: none;
+}
+.project_list li:last-child {
+	border-bottom: none;
 }
 .project_list li:after {
 	content: '';
@@ -316,8 +330,8 @@ main > section .content {
 }
 .project_list li .project_title {
 	display: inline-block;
-	margin-top: 2rem;
-	margin-bottom: 1.5rem;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	font-size: 3rem;
 	color: rgba(255, 255, 255, 1);
 }

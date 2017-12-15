@@ -49,3 +49,11 @@ section, nav, article, aside, header, footer, main {display:block;}
 	display: block;
 	clear: both;
 }
+
+
+.center_middle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
