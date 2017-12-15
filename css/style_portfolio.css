@@ -215,19 +215,19 @@ main > section.bg_section.bg_img02 h2 {
 .bg_section.bg_img01 {
 	background-image: url("../images/bg_main.jpg");
 }
-.bg_color01 {
+.bg_section.bg_img01 + section {
 	background-color: #f1efe7;
 }
 .bg_section.bg_img02 {
 	background-image: url("../images/bg_desk.jpg");
 }
-.bg_color02 {
+.bg_section.bg_img02 + section {
 	background-color: #283B4A;
 }
 .bg_section.bg_img03 {
 	background-image: url("../images/bg_leaves.jpg");
 }
-.bg_color03 {
+.bg_section.bg_img03 + section {
 	background-color: #C9BBAA;
 }
 
