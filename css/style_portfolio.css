@@ -279,10 +279,10 @@ main > section .content {
 .introduction > p small {
 	text-decoration: line-through;
 }
-.introduction > p em {
-    font-size: 2.4rem;
+/*.introduction > p em {
+	font-size: 2.4rem;
 	color: #10a1e2;
-}
+}*/
 
 
 /*Project List*/
