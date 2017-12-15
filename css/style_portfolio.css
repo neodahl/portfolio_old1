@@ -31,6 +31,9 @@ header {
 	text-align: center;
 	/*box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);*/
 	background-color: rgba(255, 255, 255, 0.8);
+
+	transition: all 0.5s ease;
+	top: 0;
 }
 
 header .logo {
@@ -41,6 +44,12 @@ header .logo {
 	color: #fff;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+
+header.scree_out {
+	top: -7rem;
+}
+
 
 
 
@@ -131,7 +140,7 @@ header .pc_right_menu li a {
 }
 header .pc_right_menu li.active a,
 header .pc_right_menu li a:hover {
-	color: #6782ad;
+	color: #248fa8;
 	/*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);*/
 }
 
@@ -219,17 +228,18 @@ main > section.bg_section.bg_img02 h2 {
 	background-color: #f1efe7;
 }
 .bg_section.bg_img02 {
-	background-image: url("../images/bg_desk.jpg");
+	background-image: url("../images/bg_project.jpg");
 }
 .bg_section.bg_img02 + section {
 	background-color: #283B4A;
 }
 .bg_section.bg_img03 {
 	background-image: url("../images/bg_leaves.jpg");
+	min-height: 100vh;
 }
-.bg_section.bg_img03 + section {
+/*.bg_section.bg_img03 + section {
 	background-color: #C9BBAA;
-}
+}*/
 
 /*Contents Section*/
 main > section .content {
