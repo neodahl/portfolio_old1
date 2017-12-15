@@ -24,23 +24,18 @@ function hideHeader(){
 
 
 /*lnb menu button*/
-$('.btn_lnb_menu').on('click', function(){
-		if( $(this).hasClass('on') ) {
-			$(this).removeClass('on');
-			$('.lnb').removeClass('on');
-		} else {
-			$(this).addClass('on');
-			$('.lnb').addClass('on');
-		}
+let btn_mo_menu = document.querySelector('.btn_lnb_menu');
+let lnb = document.querySelector('.lnb');
+
+btn_mo_menu.addEventListener('click', function(){
+	if( this.classList.contains('on') ){
+		this.classList.remove('on');
+		lnb.classList.remove('on');
+	} else {
+		this.classList.add('on');
+		lnb.classList.add('on');
+	}
 });
-
-
-
-
-
-
-
-
 
 
 
