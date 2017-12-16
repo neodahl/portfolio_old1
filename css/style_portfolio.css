@@ -18,6 +18,14 @@ main > div:not(.bg_section) {
 main > div:first-child {
 	min-height: 100vh !important;
 }
+main .bg_section {
+	position: relative;
+	height: 120vh;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 /*Contents Section*/
 main > div .content {
 	width: 950px;
@@ -178,15 +186,6 @@ desktop first
 	Main Area
 ********************************************************/
 
-
-main .bg_section {
-	position: relative;
-	min-height: 120vh;
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 main .bg_section h1,
 main .bg_section h2 {
 	position: absolute;
