@@ -52,8 +52,8 @@ header .logo {
 .btn_lnb_menu {
 	display: none;
 	position: fixed;
-	left: 1rem;
-	top: 1rem;
+	left: 2rem;
+	top: 2rem;
 	width: 4rem;
 	height: 4rem;
 	z-index: 10; /*header와 같은 값*/
@@ -157,10 +157,18 @@ header .pc_right_menu a:hover {
 	font-size: 3rem;
 	color: #fff;
 	text-indent: 2rem;
+	opacity: 0;
+	transition: opacity 0.3s linear 0.3s, color 0.2s ease;
 }
-
-
-
+.lnb.on a {
+	opacity: 1;
+}
+.lnb.on a:nth-child(2) {
+	transition: opacity 0.3s linear 0.35s
+}
+.lnb.on a:hover {
+	color: #777;
+}
 
 
 
