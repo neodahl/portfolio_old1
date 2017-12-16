@@ -135,13 +135,13 @@ header .pc_right_menu a:hover {
 	color: #fff;
 	text-indent: 2rem;
 	opacity: 0;
-	transition: opacity 0.3s linear 0.3s, color 0.2s ease;
+	transition: opacity 0.3s linear 0.35s, color 0.2s ease;
 }
 .lnb.on a {
 	opacity: 1;
 }
 .lnb.on a:nth-child(2) {
-	transition: opacity 0.3s linear 0.35s
+	transition: opacity 0.3s linear 0.4s
 }
 .lnb.on a:hover {
 	color: #999;
@@ -370,7 +370,9 @@ footer address {
 	float: right;
 	font-style: normal;
 }
-
+footer address a {
+	font-size: 1.4rem;
+}
 
 
 
