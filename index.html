@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimumscale=1.0">
 	<title>Neodahl's Portfolio</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/reset.css">
@@ -19,7 +20,7 @@
 	<!-- <header class="hide"> -->
 	<header>
 		<div class="pc_right_menu">
-			<a href="#aboutme" class="active gototest">About NeoDahl</a>
+			<a href="#aboutme">About NeoDahl</a>
 			<a href="#projects">Projects</a>
 		</div>
 	</header>
@@ -37,8 +38,8 @@
 
 	<!-- [Start] LNB mo ver. -->
 	<nav class="lnb">
-		<a href="#none">About me</a>
-		<a href="#none">Projects</a>
+		<a href="#aboutme">About NeoDahl</a>
+		<a href="#projects">Projects</a>
 	</nav>
 	<!-- [End] LNB mo ver. -->
 
@@ -47,10 +48,12 @@
 	<!-- [Start] Main Area -->
 	<main>
 
-		<div class="bg_section bg_img01" id="aboutme">
-			<h1>Hi! I'm NeoDahl.</h1>
+		<div class="bg_section bg_img01">
+			<h1>
+				<span>Hi!</span> <span>I'm</span> <span>NeoDahl.</span>
+			</h1>
 		</div>
-		<div>
+		<div id="aboutme">
 			<div class="content center_middle">
 				<div class="profile_area clearfix">
 					<div class="profile_img">
@@ -74,10 +77,10 @@
 			</div>
 		</div>
 
-		<div class="bg_section bg_img02" id="projects">
+		<div class="bg_section bg_img02">
 			<h2>Projects</h2>
 		</div>
-		<div>
+		<div id="projects">
 			<div class="content">
 				<ul class="project_list">
 					<li>

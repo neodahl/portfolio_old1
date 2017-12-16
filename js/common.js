@@ -1,13 +1,12 @@
 
 /*추가될 사항들*/
-// lnb 메뉴 활성화 된 상태에서 pc버전으로 돌아왔을때 네비게이션 사라져야함
-// 네비게이션 메뉴 클릭에 따른 페이지 스크롤
 
 
 
 
 
-/* Header show & hide 
+
+/* Header show & hide */
 let pc_header = document.querySelector('.page_wrapper > header');
 let memoryY = 0;
 
@@ -23,14 +22,16 @@ window.addEventListener('scroll', function(){
 		pc_header.classList.remove('hide');
 		memoryY = presentYoffset;
 
-		// setTimeout(hideHeader, 3000); //Header 자동 숨기기
+		setTimeout(hideHeader, 3000); //Header 자동 숨기기
+
+		return clearID;
 	}
 });
 function hideHeader(){
 	pc_header.classList.add('hide');
 }
 
-*/
+
 
 
 /*lnb menu button*/
@@ -50,8 +51,3 @@ btn_mo_menu.addEventListener('click', function(){
 
 
 
-/*click nave menu*/
-
-let header_menu_item = document.querySelectorAll('.pc_right_menu a');
-
-console.log(header_menu_item);

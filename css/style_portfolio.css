@@ -54,7 +54,6 @@ desktop first
 	transition: all 0.25s;
 	color: #555;
 }
-.page_wrapper > header .pc_right_menu a.active ,
 .page_wrapper > header .pc_right_menu a:hover {
 	color: #248fa8;
 }
@@ -67,8 +66,8 @@ desktop first
 	position: fixed;
 	left: 2rem;
 	top: 2rem;
-	width: 4rem;
-	height: 4rem;
+	width: 3rem;
+	height: 3rem;
 	z-index: 10; /*header와 같은 값*/
 	outline: none;
 }
@@ -80,11 +79,11 @@ desktop first
 .btn_lnb_menu span:empty {
 	position: absolute;
 	display: block;
-	width: 4rem;
-	height: 0.4rem;
+	width: 3rem;
+	height: 0.3rem;
 	background-color: #fff;
 	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-	border-radius: 2px;
+	border-radius: 0.2rem;
 	transition: all 0.25s ease-in-out;
 }
 .btn_lnb_menu span:empty:nth-child(1) {
@@ -189,17 +188,32 @@ main .bg_section h2 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 8vh;
+	font-size: 7vw;
 	white-space: nowrap;
 	color: #fff;
 	text-shadow: 0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 main .bg_section h1 {
-	transform: translate(-50%, -120%);
-	letter-spacing: 12px;
-	word-spacing: 16px;
+	letter-spacing: 1.2rem;
+	word-spacing: 1.6rem;
+	text-align: center;
 }
+@media all and (max-width: 1024px) {
+	main .bg_section h1 {
+		transform: translate(-50%, -70%);
+	}
+	main .bg_section h1 span {
+		display: block;
+		letter-spacing: 0.5rem;
+	}
+}
+
+
+
+
+
 main .bg_section h2 {
+	
 	letter-spacing: 30px;
 }
 main .bg_section.bg_img02 h2 {
