@@ -14,14 +14,14 @@ body {
 /*
 desktop first
 @media all and (max-width: 1024px) { tablet start }
-@media all and (min-width: 768px) and (max-width: 1024px) { tablet }
-@media all and (max-width: 767px) { phone }
+@media all and (min-width: 768px) and (max-width: 1024px) { tablet only }
+@media all and (max-width: 767px) { phone start }
 */
 
 
 
 /********************************************************
-	Header
+	Header - PC ver.
 ********************************************************/
 header {
 	position: fixed;
@@ -36,19 +36,27 @@ header {
 header.hide {
 	top: -7rem;
 }
-
-header .logo {
-	position: absolute;
-	top: 2rem;
-	left: 2rem;
-	font-size: 2rem;
-	color: #fff;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+header .pc_right_menu {
+	float: right;
+	margin-top: 2rem;
+}
+header .pc_right_menu a {
+	display: inline-block;
+	margin: 0 2rem;
+	font-size: 1.6rem;
+	font-weight: bold;
+	/*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
+	transition: all 0.25s;
+	color: #555;
+}
+header .pc_right_menu a.active ,
+header .pc_right_menu a:hover {
+	color: #248fa8;
 }
 
 
 
-/*lnb menu button*/
+/*lnb menu button - mo ver.*/
 .btn_lnb_menu {
 	display: none;
 	position: fixed;
@@ -103,37 +111,6 @@ header .logo {
 }
 
 
-header .pc_right_menu {
-	float: right;
-	margin-top: 2rem;
-}
-@media all and (max-width: 1024px) {
-	header {
-		background-color: transparent;
-	}
-	header .pc_right_menu {
-		display: none;
-	}
-}
-
-
-/*Header Menu - pc ver.*/
-header .pc_right_menu a {
-	display: inline-block;
-	margin: 0 2rem;
-	font-size: 1.6rem;
-	font-weight: bold;
-	/*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
-	transition: all 0.25s;
-	color: #555;
-}
-header .pc_right_menu a.active ,
-header .pc_right_menu a:hover {
-	color: #248fa8;
-	/*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);*/
-}
-
-
 /*Left Navigation(Local Navigation Bar) - mo ver.*/
 .lnb {
 	position: fixed;
@@ -167,7 +144,7 @@ header .pc_right_menu a:hover {
 	transition: opacity 0.3s linear 0.35s
 }
 .lnb.on a:hover {
-	color: #777;
+	color: #999;
 }
 
 
@@ -254,9 +231,10 @@ main > section .content {
 	overflow: hidden;
 	margin-right: 4rem;
 
-	/**/
+	/*
 	border: 1px solid;
 	box-sizing: border-box;
+	*/
 }
 .profile_area .profile_img img {
 	width: 100%;
@@ -281,11 +259,6 @@ main > section .content {
 .introduction > p small {
 	text-decoration: line-through;
 }
-/*.introduction > p em {
-	font-size: 2.4rem;
-	color: #10a1e2;
-}*/
-
 
 /*Project List*/
 .project_list {
@@ -386,13 +359,9 @@ main > section .content {
 	Footer
 ********************************************************/
 footer {
-	/*position: fixed;
-	bottom: 0;
-	width: 100%;*/
 	min-height: 5rem;
 	line-height: 5rem;
 	padding: 0 2rem;
-	/*background-color: rgba(0, 0, 0, 0.3);*/
 	background-color: #333;
 	color: #fff;
 	box-sizing: border-box;
