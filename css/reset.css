@@ -33,6 +33,15 @@ button,input[type="submit"], input[type="button"], input[type="reset"] {cursor:p
 section, nav, article, aside, header, footer, main {display:block;}
 
 
+/*
+desktop first
+@media all and (max-width: 1024px) { tablet start }
+@media all and (min-width: 768px) and (max-width: 1024px) { tablet only }
+@media all and (max-width: 767px) { phone start }
+*/
+
+
+
 /*Common Styles*/
 .blind {
 	position: absolute;
