@@ -23,7 +23,7 @@ desktop first
 /********************************************************
 	Header - PC ver.
 ********************************************************/
-header {
+.page_wrapper > header {
 	position: fixed;
 	z-index: 10;
 	width: 100%;
@@ -33,14 +33,19 @@ header {
 	transition: all 1s ease;
 	top: 0;
 }
-header.hide {
+@media all and (max-width: 1024px) {
+	.page_wrapper > header {
+		display: none;
+	}
+}
+.page_wrapper > header.hide {
 	top: -7rem;
 }
-header .pc_right_menu {
+.page_wrapper > header .pc_right_menu {
 	float: right;
 	margin-top: 2rem;
 }
-header .pc_right_menu a {
+.page_wrapper > header .pc_right_menu a {
 	display: inline-block;
 	margin: 0 2rem;
 	font-size: 1.6rem;
@@ -49,8 +54,8 @@ header .pc_right_menu a {
 	transition: all 0.25s;
 	color: #555;
 }
-header .pc_right_menu a.active ,
-header .pc_right_menu a:hover {
+.page_wrapper > header .pc_right_menu a.active ,
+.page_wrapper > header .pc_right_menu a:hover {
 	color: #248fa8;
 }
 
@@ -113,6 +118,7 @@ header .pc_right_menu a:hover {
 
 /*Left Navigation(Local Navigation Bar) - mo ver.*/
 .lnb {
+	display: none;
 	position: fixed;
 	top: 0;
 	z-index: 1;
@@ -124,6 +130,11 @@ header .pc_right_menu a:hover {
 	opacity: 1;
 	width: 25rem;
 	height: 100%;
+}
+@media all and (max-width: 1024px) {
+	.lnb {
+		display: block;
+	}
 }
 .lnb.on {
 	left: 0;
@@ -312,6 +323,7 @@ main > section .content {
 	margin-bottom: 15px;
 	font-size: 3rem;
 	color: rgba(255, 255, 255, 1);
+	letter-spacing: 2px;
 }
 .project_list li .project_title:after {
 	content: '';
