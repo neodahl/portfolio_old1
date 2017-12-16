@@ -33,6 +33,7 @@ button,input[type="submit"], input[type="button"], input[type="reset"] {cursor:p
 section, nav, article, aside, header, footer, main {display:block;}
 
 
+
 /*Common Styles*/
 .blind {
 	position: absolute;
