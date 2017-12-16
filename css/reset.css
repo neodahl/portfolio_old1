@@ -29,7 +29,7 @@ i, em, u, cite {font-style:normal;}
 strong,em, b {font-weight:normal;}
 a {color:inherit;text-decoration:none;}
 button {background:transparent;cursor:pointer;vertical-align:middle;margin:0;}
-button,input[type="submit"], input[type="button"], input[type="reset"] {cursor:pointer;appearance:none;}
+button,input[type="submit"], input[type="button"], input[type="reset"] {cursor:pointer;}
 section, nav, article, aside, header, footer, main {display:block;}
 
 

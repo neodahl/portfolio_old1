@@ -108,7 +108,7 @@ desktop first
 	opacity: 0;
 }
 .btn_lnb_menu.on span:empty:nth-child(3) {
-	bottom: unset;
+	bottom: auto;
 	top: 50%;
 	margin-top: -0.2rem;
 	transform: rotate(-45deg);
