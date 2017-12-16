@@ -7,9 +7,10 @@
 
 
 
-/* Header show & hide */
+/* Header show & hide 
 let pc_header = document.querySelector('.page_wrapper > header');
 let memoryY = 0;
+
 window.addEventListener('scroll', function(){
 	let presentYoffset = window.scrollY;
 
@@ -22,14 +23,14 @@ window.addEventListener('scroll', function(){
 		pc_header.classList.remove('hide');
 		memoryY = presentYoffset;
 
-		setTimeout(hideHeader, 3000); //Header 자동 숨기기
+		// setTimeout(hideHeader, 3000); //Header 자동 숨기기
 	}
 });
 function hideHeader(){
 	pc_header.classList.add('hide');
 }
 
-
+*/
 
 
 /*lnb menu button*/
@@ -49,7 +50,8 @@ btn_mo_menu.addEventListener('click', function(){
 
 
 
+/*click nave menu*/
 
+let header_menu_item = document.querySelectorAll('.pc_right_menu a');
 
-
-
+console.log(header_menu_item);

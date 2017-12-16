@@ -166,16 +166,16 @@ desktop first
 	Main Area
 ********************************************************/
 
-main > section:not(.bg_section) {
+main > div:not(.bg_section) {
 	min-height: 110vh;
 	position: relative;
 	padding: 10vh 0;
 }
 /*Background Section*/
-main > section:first-child {
+main > div:first-child {
 	min-height: 100vh !important;
 }
-main > section.bg_section {
+main .bg_section {
 	position: relative;
 	min-height: 120vh;
 	background-attachment: fixed;
@@ -183,8 +183,8 @@ main > section.bg_section {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-main > section.bg_section h1,
-main > section.bg_section h2 {
+main .bg_section h1,
+main .bg_section h2 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -194,39 +194,39 @@ main > section.bg_section h2 {
 	color: #fff;
 	text-shadow: 0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
 }
-main > section.bg_section h1 {
+main .bg_section h1 {
 	transform: translate(-50%, -120%);
 	letter-spacing: 12px;
 	word-spacing: 16px;
 }
-main > section.bg_section h2 {
+main .bg_section h2 {
 	letter-spacing: 30px;
 }
-main > section.bg_section.bg_img02 h2 {
+main .bg_section.bg_img02 h2 {
 	font-size: 9vh;
 }
 .bg_section.bg_img01 {
 	background-image: url("../images/bg_main.jpg");
 }
-.bg_section.bg_img01 + section {
+.bg_section.bg_img01 + div {
 	background-color: #f1efe7;
 }
 .bg_section.bg_img02 {
 	background-image: url("../images/bg_project.jpg");
 }
-.bg_section.bg_img02 + section {
+.bg_section.bg_img02 + div {
 	background-color: #283B4A;
 }
 .bg_section.bg_img03 {
 	background-image: url("../images/bg_leaves.jpg");
 	min-height: 100vh;
 }
-/*.bg_section.bg_img03 + section {
+/*.bg_section.bg_img03 + div {
 	background-color: #C9BBAA;
 }*/
 
 /*Contents Section*/
-main > section .content {
+main > div .content {
 	width: 950px;
 	margin: 0 auto;
 }
@@ -263,7 +263,7 @@ main > section .content {
 	margin-bottom: 2rem;
 	color: #777;
 }
-.introduction > p big {
+.introduction > p b {
 	font-size: 2.3rem;
 	color: #248fa8;
 }
