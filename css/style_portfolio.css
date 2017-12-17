@@ -319,9 +319,9 @@ main .bg_section h2 {
 }
 
 /*Project List*/
-.project_list {
+/*.project_list {
 	padding: 10vh 0;
-}
+}*/
 .project_list li {
 	padding: 4rem 2rem;
 	border-top: 1px solid #7a8998;
@@ -348,7 +348,6 @@ main .bg_section h2 {
 .project_list li .project_thumb:hover {
 	box-shadow: 5px 5px 10px #000;
 }
-
 .project_list li:nth-child(odd) .project_thumb {
 	margin-right: 4rem;
 	float: left;
@@ -364,6 +363,40 @@ main .bg_section h2 {
 .project_list li .project_thumb:hover img {
 	transform: scale(1.2);
 }
+
+
+@media all and (max-width: 1024px) {
+	.project_list li .info_area {
+		display: inline-block;
+		width: calc(100% - 29rem);
+	}
+	.project_list li p {
+		position: relative;
+		padding-left: 13rem;
+	}
+	.project_list li p span {
+		position: absolute;
+		left: 0;
+	}
+}
+@media all and (max-width: 767px) {
+	.project_list li .project_thumb {
+		float: none !important;
+		display: block;
+		width: 60vw;
+		height: 48vw;
+		margin: 0 auto !important;
+	}
+	.project_list li .info_area {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+}
+
+
+
 .project_list li .project_title {
 	display: inline-block;
 	margin-top: 15px;
@@ -397,6 +430,7 @@ main .bg_section h2 {
 	color: #ccc;
 	font-size: 1.8rem;
 	word-spacing: 2px;
+	text-align: left;
 }
 .project_list li p span {
 	display: inline-block;
