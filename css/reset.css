@@ -32,8 +32,6 @@ button {background:transparent;cursor:pointer;vertical-align:middle;margin:0;}
 button,input[type="submit"], input[type="button"], input[type="reset"] {cursor:pointer;}
 section, nav, article, aside, header, footer, main {display:block;}
 
-
-
 /*Common Styles*/
 .blind {
 	position: absolute;
