@@ -9,6 +9,7 @@ desktop first
 @media all and (max-width: 1024px) { tablet start }
 @media all and (min-width: 768px) and (max-width: 1024px) { tablet only }
 @media all and (max-width: 767px) { phone start }
+@media all and (max-width: 414px) { phone portrait start }
 */
 
 body {
@@ -411,6 +412,16 @@ main .bg_section h2 {
 	width: 12rem;
 	margin-right: 1rem;
 	color: #999;
+}
+@media all and (max-width: 414px) {
+	.project_list li p {
+		padding-left: 0;
+	}
+	.project_list li p span {
+		display: block;
+		text-indent: -1rem;
+		position: static;
+	}
 }
 .project_list li p span + a:hover {
 	color: powderblue;
