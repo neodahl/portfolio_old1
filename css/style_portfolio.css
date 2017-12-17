@@ -205,25 +205,29 @@ main .bg_section h2 {
 	text-shadow: 0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 main .bg_section h1 {
-	transform: translate(-50%, -100%);
+	transform: translate(-50%, -140%);
 	letter-spacing: 1.2rem;
 	word-spacing: 1.6rem;
 	text-align: center;
 }
 @media all and (max-width: 1024px) {
-	main .bg_section h1 {
-		transform: translate(-50%, -70%);
-	}
 	main .bg_section h1 span {
 		display: block;
 		letter-spacing: 0.5rem;
 	}
 }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	main .bg_section h1 {
+		transform: translate(-50%, -100%);
+	}
+}
 main .bg_section h2 {
 	letter-spacing: 30px;
 }
-main .bg_section.bg_img02 h2 {
-	font-size: 9vh;
+@media all and (max-width: 767px) {
+	main .bg_section h2 {
+		letter-spacing: 1rem;
+	}
 }
 .bg_section.bg_img01 {
 	background-image: url("../images/bg_main.jpg");
