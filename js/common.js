@@ -24,7 +24,6 @@ window.addEventListener('scroll', function(){
 
 		setTimeout(hideHeader, 3000); //Header 자동 숨기기
 
-		return clearID;
 	}
 });
 function hideHeader(){

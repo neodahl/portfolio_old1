@@ -3,6 +3,14 @@
 /********************************************************
 	Layout
 ********************************************************/
+/*
+desktop first
+@media all and (min-width: 1025px) { pc only }
+@media all and (max-width: 1024px) { tablet start }
+@media all and (min-width: 768px) and (max-width: 1024px) { tablet only }
+@media all and (max-width: 767px) { phone start }
+*/
+
 body {
 	font-size: 2rem;
 }
@@ -11,7 +19,7 @@ body {
 }
 main > div:not(.bg_section) {
 	position: relative;
-	min-height: 110vh;
+	/*min-height: 110vh;*/
 	padding: 10vh 0;
 }
 /*Background Section*/
@@ -31,13 +39,12 @@ main > div .content {
 	width: 950px;
 	margin: 0 auto;
 }
+@media all and (max-width: 1024px) {
+	main > div .content {
+		width: 80vw;
+	}
+}
 
-/*
-desktop first
-@media all and (max-width: 1024px) { tablet start }
-@media all and (min-width: 768px) and (max-width: 1024px) { tablet only }
-@media all and (max-width: 767px) { phone start }
-*/
 
 
 
@@ -242,6 +249,9 @@ main .bg_section.bg_img02 h2 {
 
 
 /*Profile Area*/
+.profile_area {
+	padding: 10vh 0;
+}
 .profile_area .profile_img {
 	float: left;
 	display: inline-block;
@@ -251,11 +261,9 @@ main .bg_section.bg_img02 h2 {
 	overflow: hidden;
 	margin-right: 4rem;
 }
+
 .profile_area .profile_img img {
 	width: 100%;
-	transform: scale(1.2);
-	margin-top: -55px;
-	margin-left: 26px;
 }
 
 .introduction {
@@ -263,6 +271,37 @@ main .bg_section.bg_img02 h2 {
 	display: inline-block;
 	width: calc(100% - 34rem);
 }
+@media all and (max-width: 1024px) {
+	.profile_area .profile_img {
+		width: 20vw;
+		height: 20vw;
+		margin-right: 4vw;
+	}
+	.profile_area .introduction {
+		width: calc(100% - 24vw);
+		font-size: 1.6rem;
+	}
+}
+@media all and (max-width: 767px) {
+	.profile_area {
+		text-align: center;
+	}
+	.profile_area .profile_img {
+		float: none;
+		width: 50vw;
+		height: 50vw;
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
+	.profile_area .introduction {
+		width: 100%;
+	}
+	.introduction
+}
+
+
+
+
 .introduction > p {
 	margin-bottom: 2rem;
 	color: #777;
