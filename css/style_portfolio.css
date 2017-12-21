@@ -225,19 +225,22 @@ main .bg_section h2 {
 }
 .bg_section.bg_img01 {
 	background-image: url("../images/bg_main.jpg");
+	background-size: cover;
 }
 .bg_section.bg_img01 + div {
 	background-color: #f1efe7;
 }
 .bg_section.bg_img02 {
 	background-image: url("../images/bg_project.jpg");
+	background-size: cover;
 }
 .bg_section.bg_img02 + div {
 	background-color: #283B4A;
 }
 .bg_section.bg_img03 {
-	background-image: url("../images/bg_leaves.jpg");
 	min-height: 100vh;
+	background-image: url("../images/bg_leaves.jpg");
+	background-size: cover;
 }
 /*.bg_section.bg_img03 + div {
 	background-color: #C9BBAA;
