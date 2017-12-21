@@ -225,14 +225,12 @@ main .bg_section h2 {
 }
 .bg_section.bg_img01 {
 	background-image: url("../images/bg_main.jpg");
-	background-size: cover;
 }
 .bg_section.bg_img01 + div {
 	background-color: #f1efe7;
 }
 .bg_section.bg_img02 {
 	background-image: url("../images/bg_project.jpg");
-	background-size: cover;
 }
 .bg_section.bg_img02 + div {
 	background-color: #283B4A;
@@ -240,11 +238,21 @@ main .bg_section h2 {
 .bg_section.bg_img03 {
 	min-height: 100vh;
 	background-image: url("../images/bg_leaves.jpg");
-	background-size: cover;
 }
 /*.bg_section.bg_img03 + div {
 	background-color: #C9BBAA;
 }*/
+@media all and (max-width: 414px) {
+	.bg_section.bg_img01 {
+		background-image: url("../images/bg_main_mb_portrait.png");
+	}
+	.bg_section.bg_img02 {
+		background-image: url("../images/bg_project_mb_portrait.png");
+	}
+	.bg_section.bg_img03 {
+		background-image: url("../images/bg_leaves_mb_portrait.png");
+	}
+}
 
 /*Profile Area*/
 .profile_area {
