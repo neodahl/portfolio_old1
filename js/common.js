@@ -22,7 +22,7 @@ window.addEventListener('scroll', function(){
 		pc_header.classList.remove('hide');
 		memoryY = presentYoffset;
 
-		setTimeout(hideHeader, 3000); //Header 자동 숨기기
+		// setTimeout(hideHeader, 3000); //Header 자동 숨기기
 
 	}
 });
